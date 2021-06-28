@@ -6,7 +6,9 @@ This program uses spotify-dl for the actual downloading part.
 # Installation
 
 
-To install the program run the installer script:
+To install the program download this git repo and run the installer script:
+`git clone https://github.com/Laar3/Spotify_Search/`
+`cd Spotify_Search`
 `sh install.sh`
 
 If you choose to install it properly then you can run the file with:
@@ -15,6 +17,12 @@ If you choose to install it properly then you can run the file with:
 Otherwise you will have to run the file manually (it is placed in your home folder so you can easily chuck it somewhere), run with:
 `./spotifysearch`
 while in the same directory
+
+# Uninstall
+To uninstall the progran download the git repository and run the uninstaller script
+`git clone https://github.com/Laar3/Spotify_Search/`
+`cd Spotify_Search`
+`sh uninstall.sh`
 
 to configure the program edit the file in ~/.config/spotifysearch/
 
