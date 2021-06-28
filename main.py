@@ -13,9 +13,11 @@ download_url = tracks[int(input("Select: ")) - 1].url
 
 
 if os.name == 'posix':
+    print("Your os is UNIX complient")
     os.system("export SPOTIPY_CLIENT_ID='bdfc939ee66f4c7b972a0bdd652bbbbb'")
     os.system("export SPOTIPY_CLIENT_SECRET='cb054ef4f43f42a1955669e38826c51c'")
 elif os.name == 'nt':
+    print("Your os is Windows")
     os.system("set SPOTIPY_CLIENT_ID=bdfc939ee66f4c7b972a0bdd652bbbbb")
     os.system("set SPOTIPY_CLIENT_SECRET=cb054ef4f43f42a1955669e38826c51c")
 
