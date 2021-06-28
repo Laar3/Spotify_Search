@@ -5,6 +5,10 @@ This program uses spotify-dl for the actual downloading part.
 
 # Installation
 
+Dependancies:
+python 3.6 or above
+pip
+
 
 To install the program download this git repo and run the installer script:
 
