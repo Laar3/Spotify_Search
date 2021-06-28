@@ -7,20 +7,14 @@ from spotifysearch.client import Client
 
 myclient = Client("bdfc939ee66f4c7b972a0bdd652bbbbb", "cb054ef4f43f42a1955669e38826c51c")
 results = myclient.search(input("Search: "), limit=10)
-tracks = results.get_tracks()   
+tracks = results.get_tracks()
 print("".join([f"{index + 1}: {track.name} - {track.artists[0].name} \n" for index, track in enumerate(tracks)]))
 download_url = tracks[int(input("Select: ")) - 1].url
 
 
 if os.name == 'posix':
-    print("Your os is UNIX complient")
-    os.system("export SPOTIPY_CLIENT_ID='bdfc939ee66f4c7b972a0bdd652bbbbb'")
-    os.system("export SPOTIPY_CLIENT_SECRET='cb054ef4f43f42a1955669e38826c51c'")
+    print(" ")
 elif os.name == 'nt':
-    print("Your os is Windows")
-    os.system("set SPOTIPY_CLIENT_ID=bdfc939ee66f4c7b972a0bdd652bbbbb")
-    os.system("set SPOTIPY_CLIENT_SECRET=cb054ef4f43f42a1955669e38826c51c")
-
+    print("unfortunately this program does not support windows yet, this is being worked on and will be fixed in the near future.")
 command = f"spotify_dl -o {download_dir} -l {download_url}"
 os.system(command)
-
