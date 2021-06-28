@@ -6,10 +6,15 @@ This program uses spotify-dl for the actual downloading part.
 # Installation
 
 
-To install the program run the installer script
+To install the program run the installer script:
+`sh install.sh`
 
-`sh setup.sh`
+If you choose to install it properly then you can run the file with:
+`spotifysearch`
 
+Otherwise you will have to run the file manually (it is placed in your home folder so you can easily chuck it somewhere), run with:
+`./spotifysearch`
+while in the same directory
 
 to configure the program edit the file in ~/.config/spotifysearch/
 
