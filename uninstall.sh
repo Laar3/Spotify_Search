@@ -9,3 +9,4 @@ then
 elif [ $input == "n" ] || [ $input == "N" ];
 then
 	echo "Ok"
+fi
