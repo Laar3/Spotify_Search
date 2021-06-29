@@ -19,5 +19,5 @@ elif os.name == 'nt':
 command = f"spotify_dl -o {download_dir} -l {download_url}"
 
 os.system(command)
-os.system(f"mv {download_dir}/{download_song.name}/*.mp3 {download_dir} ")
-os.system(f"rm -rfd {download_dir}/{download_song.name}")
+os.system(f"mv "{download_dir}/{download_song.name}/*.mp3" "{download_dir}" ")
+os.system(f"rm -rfd "{download_dir}/{download_song.name}"")
